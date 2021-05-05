@@ -1,6 +1,6 @@
 # Trusted Multi-View Classification
 
-This repository contains part of code for our ICLR'2021 paper [Trusted Multi-View Classification](https://openreview.net/forum?id=OOsR8BzCnl5). We will gradually release the remaining code. Here we provide a demo code and detailed instructions for constructing trustworthy multi-view/multi-modal classification algorithm.
+This repository contains codes of our ICLR'2021 paper [Trusted Multi-View Classification](https://openreview.net/forum?id=OOsR8BzCnl5). We will gradually release the remaining code. Here we provide a demo code and detailed instructions for constructing trustworthy multi-view/multi-modal classification algorithm.
 
 ## Requirment
 
