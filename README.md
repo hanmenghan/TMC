@@ -12,11 +12,11 @@ This repository contains the code of our ICLR'2021 paper [Trusted Multi-View Cla
 
 ## Quick Start
 
-Here we explain and help you convert the traditional late-fusion multimodal classification algorithm into a trusted multimodal classification algorithm. When you do this, it's best for you to read the paper first. The core code involved in the paper is very simple, we will show it below.
+To convert your networks into a trusted multimodal classification model, it is better to refer to the following steps:
 
-- Step 1: The softmax layer of a conventional neural-network-based classifier is replaced with an activation function layer (i.e., RELU) to ensure that the network outputsnon-negative values.
+- Step 1: The softmax layer of a conventional neural-network-based classifier is replaced with an activation function layer (i.e., RELU) to ensure that the network outputs non-negative values.
 - Step 2: Use the method in the paper to construct a trusted classifier for each modality. (1) Treat the output of the neural network as evidence $\mathbf{e}$. (2) Construct Dirichlet distribution with $\mathbf{e}+1$. (3) Calculate subjective uncertainty $u$ and belief masses for each modality.
-- Step 3: Use dempster’s combination rule rather than traditional fusion strategies to combine the uncertainty and belief masses from different modality.
+- Step 3: Use dempster’s combination rule rather than traditional fusion strategies to combine the uncertainty and belief masses from different modalities.
     <details>
     <summary>
     Code of dempster’s combination rule.
