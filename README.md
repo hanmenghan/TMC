@@ -19,7 +19,7 @@ To convert your networks into a trusted multimodal classification model, it is b
 - Step 3: Use dempster’s combination rule rather than traditional fusion strategies to combine the uncertainty and belief masses from different modalities.
     <details>
     <summary>
-    Code of dempster’s combination rule.
+    Code of dempster’s combination rule (click the triangle to expand the code).
     </summary>
 
     ```python
@@ -80,7 +80,7 @@ To convert your networks into a trusted multimodal classification model, it is b
 - Step 4: Use a multi-task strategy and overall loss function in the paper to optimize the model.
     <details>
     <summary>
-    Code of overall loss function.
+    Code of overall loss function (click the triangle to expand the code).
     </summary>
 
     ```python
