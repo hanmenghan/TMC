@@ -133,4 +133,4 @@ We thank the authors of [EDL](https://muratsensoy.github.io/uncertainty.html). O
 
 ## Questions?
 
-Please report any bugs and I will get to them ASAP. For any additional questions, feel free to email zongbo at tju dot edu dot cn.
+Please report any bugs and I will get to them ASAP. For any additional questions, feel free to email zongbo AT tju DOT edu DOT cn.
