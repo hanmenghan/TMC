@@ -110,16 +110,12 @@ class TMC(nn.Module):
         return alpha_a
 
     def forward(self, X, y, global_step):
-        # step one
         evidence = self.infer(X)
         loss = 0
         alpha = dict()
         for v_num in range(len(X)):
-            # step two
             alpha[v_num] = evidence[v_num] + 1
-            # step three
             loss += ce_loss(y, alpha[v_num], self.classes, global_step, self.lambda_epochs)
-        # step four
         alpha_a = self.DS_Combin(alpha)
         evidence_a = alpha_a - 1
         loss += ce_loss(y, alpha_a, self.classes, global_step, self.lambda_epochs)
