@@ -6,6 +6,7 @@ from torch.utils.data import DataLoader
 from model import TMC
 from data import Multi_view_data
 import warnings
+
 warnings.filterwarnings("ignore")
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
@@ -59,6 +60,7 @@ if __name__ == "__main__":
 
     model.cuda()
 
+
     def train(epoch):
         model.train()
         loss_meter = AverageMeter()
@@ -90,8 +92,9 @@ if __name__ == "__main__":
                 correct_num += (predicted == target).sum().item()
                 loss_meter.update(loss.item())
 
-        print('====> acc: {:.4f}'.format(correct_num/data_num))
-        return loss_meter.avg, correct_num/data_num
+        print('====> acc: {:.4f}'.format(correct_num / data_num))
+        return loss_meter.avg, correct_num / data_num
+
 
     for epoch in range(1, args.epochs + 1):
         train(epoch)

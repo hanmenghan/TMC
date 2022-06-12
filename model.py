@@ -29,6 +29,7 @@ def ce_loss(p, alpha, c, global_step, annealing_step):
 
     return (A + B)
 
+
 def mse_loss(p, alpha, c, global_step, annealing_step=1):
     S = torch.sum(alpha, dim=1, keepdim=True)
     E = alpha - 1
@@ -62,6 +63,7 @@ class TMC(nn.Module):
         :param alpha: All Dirichlet distribution parameters.
         :return: Combined Dirichlet distribution parameters.
         """
+
         def DS_Combin_two(alpha1, alpha2):
             """
             :param alpha1: Dirichlet distribution parameters of view 1
@@ -73,9 +75,9 @@ class TMC(nn.Module):
             b, S, E, u = dict(), dict(), dict(), dict()
             for v in range(2):
                 S[v] = torch.sum(alpha[v], dim=1, keepdim=True)
-                E[v] = alpha[v]-1
-                b[v] = E[v]/(S[v].expand(E[v].shape))
-                u[v] = self.classes/S[v]
+                E[v] = alpha[v] - 1
+                b[v] = E[v] / (S[v].expand(E[v].shape))
+                u[v] = self.classes / S[v]
 
             # b^0 @ b^(0+1)
             bb = torch.bmm(b[0].view(-1, self.classes, 1), b[1].view(-1, 1, self.classes))
@@ -91,9 +93,9 @@ class TMC(nn.Module):
             C = bb_sum - bb_diag
 
             # calculate b^a
-            b_a = (torch.mul(b[0], b[1]) + bu + ub)/((1-C).view(-1, 1).expand(b[0].shape))
+            b_a = (torch.mul(b[0], b[1]) + bu + ub) / ((1 - C).view(-1, 1).expand(b[0].shape))
             # calculate u^a
-            u_a = torch.mul(u[0], u[1])/((1-C).view(-1, 1).expand(u[0].shape))
+            u_a = torch.mul(u[0], u[1]) / ((1 - C).view(-1, 1).expand(u[0].shape))
 
             # calculate new S
             S_a = self.classes / u_a
@@ -102,11 +104,11 @@ class TMC(nn.Module):
             alpha_a = e_a + 1
             return alpha_a
 
-        for v in range(len(alpha)-1):
-            if v==0:
+        for v in range(len(alpha) - 1):
+            if v == 0:
                 alpha_a = DS_Combin_two(alpha[0], alpha[1])
             else:
-                alpha_a = DS_Combin_two(alpha_a, alpha[v+1])
+                alpha_a = DS_Combin_two(alpha_a, alpha[v + 1])
         return alpha_a
 
     def forward(self, X, y, global_step):
@@ -138,9 +140,9 @@ class Classifier(nn.Module):
         super(Classifier, self).__init__()
         self.num_layers = len(classifier_dims)
         self.fc = nn.ModuleList()
-        for i in range(self.num_layers-1):
-            self.fc.append(nn.Linear(classifier_dims[i], classifier_dims[i+1]))
-        self.fc.append(nn.Linear(classifier_dims[self.num_layers-1], classes))
+        for i in range(self.num_layers - 1):
+            self.fc.append(nn.Linear(classifier_dims[i], classifier_dims[i + 1]))
+        self.fc.append(nn.Linear(classifier_dims[self.num_layers - 1], classes))
         self.fc.append(nn.Softplus())
 
     def forward(self, x):
