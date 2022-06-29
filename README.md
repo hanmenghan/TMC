@@ -2,14 +2,6 @@
 
 This repository contains the code of our ICLR'2021 paper [Trusted Multi-View Classification](https://arxiv.org/abs/2102.02051) [[中文介绍]](https://mp.weixin.qq.com/s/thx3WSqc64rcEJVOS3OY7A) [[中文讲解]](https://b23.tv/Gll8A1) and the code of our IEEE TPAMI'2022 paper [Trusted Multi-View Classification with Dynamic Evidential Fusion](https://arxiv.org/abs/2204.11423). We will gradually improve and enhance the code. Here we provide a demo and detailed instructions for constructing trustworthy multi-view/multi-modal classification algorithm.
 
-## Requirment
-
-- Pytorch 1.3.0
-- Python 3
-- sklearn
-- numpy
-- scipy
-
 ## Quick Start
 
 To convert your networks into a trusted multimodal classification model, it is better to refer to the following steps:
@@ -124,6 +116,13 @@ author={Zongbo Han and Changqing Zhang and Huazhu Fu and Joey Tianyi Zhou},
 booktitle={International Conference on Learning Representations},
 year={2021},
 url={https://openreview.net/forum?id=OOsR8BzCnl5}
+}
+@article{han2022trusted,
+  title={Trusted Multi-View Classification with Dynamic Evidential Fusion},
+  author={Han, Zongbo and Zhang, Changqing and Fu, Huazhu and Zhou, Joey Tianyi},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2022},
+  publisher={IEEE}
 }
 ```
 
