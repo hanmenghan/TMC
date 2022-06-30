@@ -8,3 +8,7 @@
 - sklearn
 - numpy
 - scipy
+
+## Data
+
+The data used in the paper can be obtained through the following links [SUNRGBD](https://github.com/ownstyledu/Translate-to-Recognize-Networks) and [NYUD2](https://drive.google.com/file/d/1M-EvhVfQ0HXEpTrDcqVrNK6C8CHPP0Yo/view?usp=sharing). 
