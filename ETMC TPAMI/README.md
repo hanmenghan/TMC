@@ -11,4 +11,4 @@
 
 ## Data
 
-The data used in the paper can be obtained through the following links [SUNRGBD](https://github.com/ownstyledu/Translate-to-Recognize-Networks) and [NYUD2](https://drive.google.com/file/d/1M-EvhVfQ0HXEpTrDcqVrNK6C8CHPP0Yo/view?usp=sharing). 
+The data used in the paper can be obtained through the following links [SUNRGBD](http://mcg.nju.edu.cn/dataset/sun-rgbd_conc.tar) and [NYUD2](https://drive.google.com/file/d/1M-EvhVfQ0HXEpTrDcqVrNK6C8CHPP0Yo/view?usp=sharing). 
