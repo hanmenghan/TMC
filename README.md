@@ -133,3 +133,22 @@ We thank the authors of [EDL](https://muratsensoy.github.io/uncertainty.html). O
 ## Questions?
 
 Please report any bugs and I will get to them ASAP. For any additional questions, feel free to email zongbo AT tju DOT edu DOT cn.
+
+## Related works
+
+There are many interesting works inspired by this paper and the following are related follow-up works:
+
+* Provable Dynamic Fusion for Low-Quality Multimodal Data
+* Uncertainty-based Fusion Netwok for Automatic Skin Lesion Diagnosis
+* Uncertainty Estimation for Multi-view Data: The Power of Seeing the Whole Picture
+* Reliable Multimodality Eye Disease Screening via Mixture of Student's t Distributions
+* Trusted Multi-Scale Classification Framework for Whole Slide Image
+* Fast Road Segmentation via Uncertainty-aware Symmetric Network
+* Trustworthy multimodal regression with mixture of normal-inverse gamma distributions
+* Uncertainty-Aware Multiview Deep Learning for Internet of Things Applications
+* Automated crystal system identification from electron diffraction patterns using multiview opinion fusion machine learning
+* Trustworthy Long-Tailed Classification
+* Trusted multi-view deep learning with opinion aggregation
+* EvidenceCap: Towards trustworthy medical image segmentation via evidential identity cap
+* Federated Uncertainty-Aware Aggregation for Fundus Diabetic Retinopathy Staging
+* Multimodal dynamics: Dynamical fusion for trustworthy multimodal classification
