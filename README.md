@@ -138,9 +138,9 @@ Please report any bugs and I will get to them ASAP. For any additional questions
 
 There are many interesting works inspired by this paper and the following are related follow-up works:
 
-* Provable Dynamic Fusion for Low-Quality Multimodal Data
-* Uncertainty-based Fusion Netwok for Automatic Skin Lesion Diagnosis
-* Uncertainty Estimation for Multi-view Data: The Power of Seeing the Whole Picture
+* [Provable Dynamic Fusion for Low-Quality Multimodal Data](https://arxiv.org/abs/2306.02050)
+* [Uncertainty-based Fusion Netwok for Automatic Skin Lesion Diagnosis](https://ieeexplore.ieee.org/document/9994932/)
+* [Uncertainty Estimation for Multi-view Data: The Power of Seeing the Whole Picture](https://arxiv.org/abs/2210.02676)
 * Reliable Multimodality Eye Disease Screening via Mixture of Student's t Distributions
 * Trusted Multi-Scale Classification Framework for Whole Slide Image
 * Fast Road Segmentation via Uncertainty-aware Symmetric Network
