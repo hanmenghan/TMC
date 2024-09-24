@@ -1,5 +1,8 @@
 # Trusted Multi-View Classification
 
+![visitor count](https://komarev.com/ghpvc/?username=hanmenghan&repo=TMC)
+
+
 This repository contains the code of our ICLR'2021 paper [Trusted Multi-View Classification](https://arxiv.org/abs/2102.02051) [[中文介绍]](https://mp.weixin.qq.com/s/thx3WSqc64rcEJVOS3OY7A) [[中文讲解]](https://b23.tv/Gll8A1) and the code of our IEEE TPAMI'2022 paper [Trusted Multi-View Classification with Dynamic Evidential Fusion](https://arxiv.org/abs/2204.11423). We will gradually improve and enhance the code. Here we provide a demo and detailed instructions for constructing trustworthy multi-view/multi-modal classification algorithm.
 
 ## Quick Start
